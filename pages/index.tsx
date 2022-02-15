@@ -1,5 +1,7 @@
-import Head from 'next/head'
-import Sidebar from "../components/Sidebar"
+import Head from 'next/head';
+import Sidebar from "../components/Sidebar";
+import Center from "../components/Center"
+
 
 export default function Home() {
   return (
@@ -7,9 +9,10 @@ export default function Home() {
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <main className=''>
+      </Head> 
+      <main className='flex'>
         <Sidebar />
+        <Center />
       </main>
     </div>
   )
