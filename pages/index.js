@@ -19,6 +19,12 @@ export default function Home() {
   )
 }
 
-// export async function geServerSideProps(context) {
-//   const session = await getSession(context);
-// }
+export async function geServerSideProps(context) {
+  const session = await getSession(context);
+
+  return {
+    props: {
+      session,
+    }
+  }
+}
